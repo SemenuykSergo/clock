@@ -1,11 +1,10 @@
-
+let startTimeColor = new Date().getMinutes();
 colorSet();
 
 function clock() {
    let hours;
    let minutes;
    let seconds;
-   let startTimeColor = new Date().getMinutes();
    let date = new Date();
    let get = document.getElementById('hours');
    hours = date.getHours();
