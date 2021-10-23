@@ -31,16 +31,10 @@ function getRandomInt(max) {
 }
 
 function colorSet() {
-   let element;
-   let color = ['red', 'green', 'pink', 'lavender', 'purple', 'salmon'];
-   let backColor = ['orange', 'yellow', 'teal', 'aqua', 'navy', 'gray'];
-   let rand;
-   rand = getRandomInt(6);
+   let element;   
    element = document.querySelector('.clock');
-   element.style.color = color[rand];
-   rand = getRandomInt(6);
-   element.style.backgroundColor = backColor[rand];
+   element.style.color = 'rgb(' + getRandomInt(256) + ',' + getRandomInt(256) + ',' + getRandomInt(256) + ')';
+   element.style.backgroundColor =  'rgb(' + getRandomInt(256) + ',' + getRandomInt(256) + ',' + getRandomInt(256) + ')';
 }
-
 
 setInterval(clock, 1000);
